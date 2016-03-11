@@ -1,0 +1,9 @@
+.leftNavContents{
+
+    top: 434px;
+    position: fixed;
+    width: 196px;
+    height: 290px;
+    border:2px solid red;
+    z-index: 1;
+}

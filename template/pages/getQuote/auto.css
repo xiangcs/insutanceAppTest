@@ -1,0 +1,145 @@
+.hero-auto {
+    background-image: url('https://purchase.allstate.com/onlinesalesweb/assets/media/themes/aos/images/hero-auto-mobile.png');
+}
+.hero-super {
+    min-height: 15.3125rem;
+    background-size: cover;
+    margin-bottom: 2.5rem;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin-bottom: 4.375rem;
+}
+@media (min-width: 60em),print {
+    .hero-super {
+        min-height: 17.6875rem;
+        margin-bottom: 2.5rem;
+    }
+}
+@media (min-width: 60rem), print {
+    .hero {
+
+        padding: 0;
+    }
+}
+@media (min-width: 48em) ,print {
+    .hero-auto {
+        background-image: url('https://purchase.allstate.com/onlinesalesweb/assets/media/themes/aos/images/hero-auto-medium.png');
+        background-position: center 75%;
+    }
+}
+
+@media (min-width: 48em),print {
+    .hero-super {
+        min-height: 16.875rem;
+        margin-bottom: 2.5rem;
+    }
+}
+.greeting {
+    display: inline-block;
+    margin: 6.25rem 0 4.6875rem;
+    position: relative;
+    border-top: 2px solid #fff;
+    border-bottom: none;
+    text-align: center;
+    animation: greeting .3s ease-in-out;
+}
+.greeting__hdg {
+    display: inline-block;
+    margin-top: -0.125rem;
+    padding: 0 0.625rem 0.625rem 0.625rem;
+    position: relative;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    color: #fff;
+    font-size: 3.75rem;
+    font-family: 'Allstate Sans Bold',Arial,Helvectica,sans-serif;
+    line-height: 1;
+    letter-spacing: -0.1875rem;
+    text-shadow: 2px 2px 0 #004a88;
+}
+.greeting__hdg__box {
+    width: 100%;
+    margin-top: -2px;
+    padding: 0 10%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    color: #fff;
+    font-size: 0.875rem;
+    font-family: Arial,Helvetica,sans-serif;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.greeting__hdg__box__txt>* {
+    display: inline;
+    padding: 0.3125rem 0;
+    position: relative;
+    z-index: 10;
+    background: #004a88;
+    box-shadow: 5px 0 0 #004a88,-5px 0 0 #004a88;
+    line-height: 1.5;
+}
+.greeting__hdg__box__txt {
+    display: inline-block;
+    position: relative;
+}
+.greeting__hdg__box__txt:before{
+    content: "";
+    width: 31.25rem;
+    height: 2px;
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #fff;
+}
+.greeting__hdg__box__txt:after {
+    content: "";
+    width: 31.25rem;
+    height: 2px;
+    display: block;
+    margin-left: 0.625rem;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    left: auto;
+    background: #fff;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@media (min-width: 48em), print{
+    .greeting__hdg {
+        font-size: 5.3125rem;
+    }
+}
+@media (min-width: 60rem), print {
+    .greeting__hdg {
+        margin: 0;
+        padding: 0 1.25rem 0.625rem 1.25rem;
+        font-size: 6rem;
+        letter-spacing: -0.1875rem;
+        text-shadow: 5px 5px 0 #004a88;
+    }
+}
+@media (min-width: 60rem), print {
+    .greeting__hdg__box {
+        padding: 0 25%;
+    }
+}
+@media (min-width: 48em), print {
+    .greeting__hdg__box {
+        padding: 0 20%;
+    }
+}

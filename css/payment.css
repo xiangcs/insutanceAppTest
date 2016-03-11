@@ -1,0 +1,32 @@
+.payment{
+    margin: 50px 60px 10px 60px;
+    background:lightgrey;
+    width: 848px;
+    height: auto;
+}
+.payform {
+    margin: 10px 10px 10px 10px;
+    background: white;
+    width: 800px;
+    height: auto;
+    padding:10px 10px 10px 10px;
+}
+.payTitle{
+    background: #00467f;
+}
+.payTitle h3 {
+    color: white;
+    margin-top: 5px;
+}
+form label {
+    color:#00467f;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.payment span{
+    color:red;
+}
+.payform select{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

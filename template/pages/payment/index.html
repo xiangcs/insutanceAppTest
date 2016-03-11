@@ -1,0 +1,125 @@
+<div class="LayoutBannerFull">
+    <div class="hero-hp-left">
+        <a href="hi.html">Say Hi</a>
+        <div class="container payment" style="width: 848px">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12 col-md-12 payTitle"><h3>Payment &amp; Review</h3></div>
+            </div>
+            <div class="payform">
+                <form name="payment">
+                    <div class="form-group">
+                        <label><input type="radio" checked/> Credit or Debit Card</label>
+                        <div class="row"><div class="col-sm-6 col-lg-6 col-md-6 ">
+                            <input name="cardName" ng-model ="cardName" type="text" placeholder="Name on Card" class="form-control"
+                                   ng-pattern = "/[0-9!@#$%^&*()_+]/" required/>
+                        </div></div>
+                        <div ng-show="payment.cardName.$touched">
+                            <span ng-show="payment.cardName.$error.required">Required!</span>
+                            <span ng-show="payment.cardName.$valid">Invalid!</span>
+                        </div>
+                    </div><br>
+                    <div class="row cardTypeNum">
+                        <div class="col-sm-4 col-lg-4 col-md-4">
+                            <select style="margin-top: 3px"
+                                    class="form-control input-sm ng-pristine ng-invalid ng-invalid-required">
+                                <option value="" class="">Card Type</option>
+                                <option value="0">Visa</option>
+                                <option value="1">MasterCard</option>
+                                <option value="2">American Express</option>
+                                <option value="4">Visa Debit</option>
+                                <option value="5">MasterCard Debit</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 col-lg-4 col-md-4">
+                            <input name="cardNum" ng-model ="cardNum" type="text" placeholder="Card Number" class="form-control"
+                                   ng-pattern = "/\D/" maxlength=12 required/>
+                            <div ng-show="payment.cardNum.$touched">
+                                <span ng-show="payment.cardNum.$error.required">Required!</span>
+                                <span ng-show="payment.cardNum.$valid">Invalid!</span>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="cardExpiration">
+                        <p>Expiration date</p>
+                        <div class="row">
+                            <div class="col-sm-2 col-lg-2 col-md-2">
+                                <select class="form-control input-sm ng-pristine ng-invalid ng-invalid-required">
+                                    <option ng-repeat=" m in months">{{m}}</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2 col-lg-2 col-md-2">
+                                <select class="form-control input-sm ng-pristine ng-invalid ng-invalid-required">
+                                    <option ng-repeat=" y in years">{{y}}</option></select>
+                            </div>
+                            <div class="col-sm-2 col-lg-2 col-md-2">
+                                <input name="cvv" ng-model ="cvv" type="text" placeholder="CVV" class="form-control"
+                                       ng-pattern = "/\D/" maxlength="3" style="margin-top: 2px"required/>
+                                <div ng-show="payment.cvv.$touched">
+                                    <span ng-show="payment.cvv.$error.required">Required!</span>
+                                    <span ng-show="payment.cvv.$valid">Invalid!</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-lg-3 col-md-3"><img src="images/card2.png" style="margin-left: -21px;
+                 height: 28px;margin-top: 5px"/> </div>
+                        </div>
+                    </div>
+                    <div class="billAddress">
+                        <label>Billing Address</label>
+                        <div class="address">
+                            <p>Country</p>
+                            <div class="row">
+                                <div class="col-sm-3 col-lg-3 col-md-3">
+                                    <select class="form-control input-sm ng-pristine ng-invalid ng-invalid-required"
+                                            ng-options="n for (n,Country) in countries" ng-model="Country" style="margin-top: 3px">
+                                        <option value="">Country</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 col-lg-3 col-md-3">
+                                    <input name="street1" ng-model ="street1" type="text" placeholder="street-line1" class="form-control"
+                                           ng-pattern="/\W/" required/>
+                                    <div ng-show="payment.street1.$touched">
+                                        <span ng-show="payment.street1.$error.required">Required!</span>
+                                        <span ng-show="payment.street1.$valid">Invalid!</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-lg-3 col-md-3">
+                                    <input name="street2" ng-model ="street2" type="text" placeholder="street-line2(optional)" class="form-control"
+                                           ng-pattern="/\W/" required/>
+                                    <div ng-show="payment.street2.$touched">
+                                        <span ng-show="payment.street2.$error.required">Required!</span>
+                                        <span ng-show="payment.street2.$valid">Invalid!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-3 col-lg-3 col-md-3">
+                                    <input name="city" ng-model ="city" type="text" placeholder="City" class="form-control"
+                                           ng-pattern = "/[0-9!@#$%^&*()_+]/"style="margin-top: 4px" required/>
+                                    <div ng-show="payment.city.$touched">
+                                        <span ng-show="payment.city.$error.required">Required!</span>
+                                        <span ng-show="payment.city.$valid">Invalid!</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-lg-3 col-md-3">
+                                    <select class="form-control"
+                                            ng-model="State" ng-options="n for (n,State) in Country">
+                                        <option value="">States</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 col-lg-3 col-md-3">
+                                    <input name="code" ng-model ="code" type="text" placeholder="Postal code" class="form-control"
+                                           ng-pattern = "/\D/" style="margin-top: 5px" required/>
+                                    <div ng-show="payment.code.$touched">
+                                        <span ng-show="payment.code.$error.required">Required!</span>
+                                        <span ng-show="payment.code.$valid">Invalid!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div></div>
+</div>

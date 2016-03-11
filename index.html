@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/controllers/payCtrl.js"></script>
+    <script src="javascript/controllers/signUp.js"></script>
+
+    <link rel="stylesheet" href="css/app.css" >
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/summary.css">
+    <link rel="stylesheet" href="css/accountForm.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>All State Insurance Application</title>
+</head>
+<body>
+<!--begin[body]-->
+<div class="wrap">
+    <div class="LayoutHeader">
+        <div class="topnavOuter">
+            <ul>
+                <li><a href="https://agents.allstate.com/locator.html?zip=95132" target="_blank" name="&amp;lpos=RWDTopNavigation">Find An Agent</a></li>
+                <li><a href="//www.allstate.com/contactus/main.aspx" target="_top" name="&amp;lpos=RWDTopNavigation">Contact Us</a></li>
+                <li><a href="http://espanol.allstate.com/" target="_blank" name="&amp;lpos=RWDTopNavigation">Español</a></li>
+                <li class="search">
+                    <input id="Hidden1" type="text"/>
+                    <img src="https://www.allstate.com/resources/images/search_off.png" alt="Search" class="searchIcon" name="Imagebutton2" id="Img1" >
+            </ul>
+        </div>
+        <div class="TopNavigation">
+            <div id="MainNav">
+                <a href="#/intro" target="_top" class="headerLogo">
+                    <img src="https://www.allstate.com/resources/Allstate/images/financial/global/allstate-logo-header-170x45.png" alt="all state insurance company logo"/>
+                </a>
+                <div class="quoteHead">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">GET A QUOTE</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="template/pages/getQuote/auto.html">Auto</a></li>
+                            <li><a href="#health">Health</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#others">Others</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul id="MainMenu" class="nav nav-pills">
+                    <li role="presentation"><a href="#autoInsurance" ng-click="">Insurance &amp; More</a></li>
+                    <li role="presentation"><a href="#">Claims</a></li>
+                    <li role="presentation"><a href="#payment">Tools &amp; Resources</a></li>
+                    <li role="presentation"><a href="#signUp">My Account Login</a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div ng-view></div>
+</div>
+</body>
+</html>

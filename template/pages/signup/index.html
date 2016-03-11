@@ -1,0 +1,29 @@
+<div class="LayoutBannerFull">
+    <div class="hero-hp-left" >
+        <div class="container signUp" ng-hide = "isTrue" style="width:848px;">
+            <form class="form-inline">
+                <div class="form-group">
+                    <p>Log in My Account: </p>
+                </div>
+                <div class="form-group">
+                    <input ng-model="userName" type="text" class="form-control" id="userName" placeholder="User Name">
+                </div>
+                <div class="form-group">
+                    <input ng-model="passWord" type="text" class="form-control" id="passWord" placeholder="Password">
+                </div>
+                <button class="btn btn-success" style="background: #239c56;" ng-click="login(userName,passWord)">Log In</button>
+                <span>{{warning}}</span>
+                <div>
+                    <ul class="accountQ">
+                        <li style="margin-left: 180px"><a href="#">Forgot user ID?</a></li>
+                        <li><a href="#">Forgot password?</a></li>
+                        <li><a href="#creatAccount">Create an account</a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <div ng-show = "isTrue">
+            <p>Signed Up successfully!</p>
+        </div>
+    </div>
+</div>

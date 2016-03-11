@@ -1,0 +1,9 @@
+.pageColumn{
+    width: 747px;
+}
+.accountForm{
+    border:2px solid #9C9A9A;
+}
+.accountForm hr{
+    border-top: 1px solid #9C9A9A;
+}

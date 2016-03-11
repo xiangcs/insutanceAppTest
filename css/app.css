@@ -1,0 +1,236 @@
+.topnavOuter {
+    height: 46px;
+    background-color: #00467f;
+    border-bottom: 1px solid #115288;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}  .TopNavigation {
+    height: 94px;
+    left: 0;
+    min-width: 960px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 36px;
+    background:url("https://www.allstate.com/resources/Images/ResponsiveTopNavigation/nav-closed.png") repeat-x scroll 0 10px;
+}  body{
+    opacity: 1;
+    visibility: visible;
+    background: url("https://www.allstate.com/resources/Allstate/images/global/bg-body.jpg") 50% 0% no-repeat scroll rgb(231, 237, 239);
+    z-index: -2;
+}
+.LayoutHeader{
+    width: 100%;
+    min-height: 1px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    z-index: 110;
+    background-color: #fff;
+}
+.topnavOuter ul{
+    float: right;
+    margin-top: 8px;
+    margin-right: 25px;
+
+}
+.topnavOuter ul li{
+    float: left;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.topnavOuter ul a{
+    color: #fff;
+    font-weight: bold;
+    padding: 0 15px;
+    border-right: 1px solid #1a598c;
+    white-space: nowrap;
+}
+.topnavOuter .searchIcon{
+    position: absolute;
+    right: 29px;
+    top: 13px;
+}
+
+.LayoutBannerFull{
+
+     width: 955px;
+    box-sizing: content-box;
+    padding-top: 134px;
+    margin: 0 auto;
+}
+.LayoutBody{
+    box-sizing: content-box;
+    padding-top: 334px;
+    width: 955px;
+    min-height: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.LayoutFooter{
+    width: 955px;
+    position: relative;
+    height: 670px;
+    top:1380px
+    box-sizing: content-box;
+    display: block;
+    margin: 0 auto;
+    z-index: 98;
+}
+
+.hero-hp-left{
+    background: none no-repeat scroll 0 0 rgba(0,0,0,0);
+    float: left;
+    display: block;
+    height: 284px;
+    margin: 8px 11px 0;
+    position: relative;
+    width: 938px;
+}
+.hero-hp-left2{
+    background: none no-repeat scroll 0 0 rgba(0,0,0,0);
+    float: left;
+    display: block;
+    height: 350px;
+    margin: 8px 11px 0;
+    position: relative;
+    width: 938px;
+}
+.agentClient{
+    position: relative;
+    height: 284px;
+    background:
+    url("https://www.allstate.com/resources/Allstate/images/global/hero-banners/hp-hero-agent-client.jpg") 50% 0% no-repeat scroll rgb(231, 237, 239);
+    z-index: 1;
+}
+.agentAuto{
+    background:
+    url("https://www.allstate.com/resources/Allstate/images/global/hero-banners/hero-auto1.jpg") 50% 0% no-repeat scroll rgb(231, 237, 239);
+    z-index: 1;
+}
+.agentAuto .cta{
+    color: white;
+    opacity:1;
+    height: 251px;
+    overflow: hidden;
+    padding: 30px 50px 46px;
+    position: absolute;
+    top: 15px;
+    width: 454px;
+}
+.agentClient-bottom{
+    background-image: url("https://www.allstate.com/resources/Allstate/images/global/hero-banners/hp-hero-agent-client-bottom.png");
+    margin: 0 10px;
+    width: 940px;
+    height: 60px;
+    text-align: left;
+    display: block;
+    box-sizing: content-box;
+    float: left;
+}
+.agentClient .cta{
+    background:white;
+    height: 251px;
+    overflow: hidden;
+    padding: 30px 50px 46px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 454px;
+}
+.agentAuto h1 {
+    color: #FFF;
+    font: 18px/1.2 'Open Sans',sans-serif;
+    margin: 0;
+    width: 100%;
+}
+.agentAuto p {
+    color: #FFF;
+    font: 34px/1.1 'Open Sans',sans-serif;
+    margin: 5px 0;
+}
+.agentClient h2 {
+    color: #1666af;
+    font: 1.4em/1.5em "Open Sans",sans-serif;
+    margin: 0;
+    width: 100%;
+}
+.agentClient p {
+    color: #666;
+    font: 17px/22px 'Open Sans',sans-serif;
+    margin: 5px 0;
+}
+.btn-cta {
+    background-color: #E67E22;
+    color: #FFF !important;
+    display: inline-block;
+    font: 17px/23px 'Open Sans',sans-serif;
+    margin: 10px 0 0;
+    padding: 10px 18px;
+    text-decoration: none !important;
+}
+.hero-hp-left .btn-cta {
+    float: left;
+    text-decoration: none;
+    margin-top: 12px;
+}
+.btn-cta span {
+    background: url("https://www.allstate.com/resources/Allstate/images/global/cta-arrow-lg.png") no-repeat 100% 55%;
+    padding-right: 20px;
+}
+.row-clr{
+    clear:both;
+}
+#MainNav{
+    margin: 25px 0 0 10%;
+}
+#MainMenu li{
+    margin: 2px 0 0 -3px;
+}
+#MainMenu li:first-child{
+    margin: 2px 0 0 45px;
+}
+.headerLogo{
+    float: left;
+    height: 41px;
+    width: 145px;
+}
+.quoteHead{
+    float: left;
+    height: 41px;
+    width: 145px;
+    margin: 4px 0 0 75px;
+}
+.bgRow{
+    border: 2px solid red;
+    float: left;
+    display: block;
+    top:80px;
+    height: 78px;
+    background: #eef2f6;
+    z-index: 200;
+}
+.signUp{
+    background:#eef2f6;
+    width: 848px;
+}
+.signUp p{
+    font-family: arial,sans-serif;
+    padding:30px 0 30px 0;
+}
+.signUp ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}
+.accountQ{
+    margin: -20px 0 0 0;
+}

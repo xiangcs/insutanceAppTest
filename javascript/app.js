@@ -1,0 +1,41 @@
+/**
+ * Created by xcs on 16/2/12.
+ */
+angular.module('app',['ngRoute']).
+    config(['$routeProvider',function($routeProvider){
+        $routeProvider.when('/intro',{
+            templateUrl:'template/pages/intro/index.html',
+            controller:'introCtrl'
+        })
+            .when('/auto',{
+                templateUrl:"template/pages/getQuote/auto.html",
+                controller:"autoCtrl"
+            })
+            .when('/health',{
+                templateUrl:"template/pages/getQuote/health.html",
+                controller:"healthCtrl"
+            })
+            .when('/autoInsurance',{
+                templateUrl:"template/pages/summary/index.html",
+                controller:"summaryCtrl"
+            })
+            .when('/signUp',{
+                templateUrl:"template/pages/signUp/index.html",
+                controller:"signUpCtrl"
+            })
+            .when('/signIn',{
+                templateUrl:"template/pages/signIn/index.html",
+                controller:"signInCtrl"
+            })
+            .when('/creatAccount',{
+                templateUrl:"template/pages/signUp/creatAccount.html",
+                controller:"creatAccountCtrl"
+            })
+            .when('/payment',{
+                templateUrl:"template/pages/payment/index.html",
+                controller:"payCtrl"
+            })
+            .otherwise({
+                redirectTo:'/intro'
+            });
+    }]);
