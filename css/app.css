@@ -8,9 +8,8 @@
     width: 100%;
     z-index: 100;
 }  .TopNavigation {
-    height: 94px;
+    height: 68px;
     left: 0;
-    min-width: 960px;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -32,11 +31,17 @@
     z-index: 110;
     background-color: #fff;
 }
+#nav-toggle {
+    display: inline;
+    top:5px;
+    left: 20px;
+    position: relative;
+}
+
 .topnavOuter ul{
     float: right;
     margin-top: 8px;
     margin-right: 25px;
-
 }
 .topnavOuter ul li{
     float: left;
@@ -192,22 +197,17 @@
 #MainNav{
     margin: 25px 0 0 10%;
 }
-#MainMenu li{
+ .dropdown-menu li{
     margin: 2px 0 0 -3px;
 }
-#MainMenu li:first-child{
-    margin: 2px 0 0 45px;
-}
-.headerLogo{
-    float: left;
-    height: 41px;
-    width: 145px;
+.dropdown-menu li:first-child{
+    margin: 2px 0 0 9px;
 }
 .quoteHead{
     float: left;
     height: 41px;
     width: 145px;
-    margin: 4px 0 0 75px;
+    margin: 13px 0 0 45px;
 }
 .bgRow{
     border: 2px solid red;

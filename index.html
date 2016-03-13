@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <script src="javascript/app.js"></script>
     <script src="javascript/controllers/payCtrl.js"></script>
     <script src="javascript/controllers/signUp.js"></script>
-
+    <link rel="stylesheet" href="css/headNavMedia.css" >
     <link rel="stylesheet" href="css/app.css" >
     <link rel="stylesheet" href="css/payment.css">
     <link rel="stylesheet" href="css/summary.css">
     <link rel="stylesheet" href="css/accountForm.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <title>All State Insurance Application</title>
+
 </head>
 <body>
 <!--begin[body]-->
@@ -33,37 +35,64 @@
             </ul>
         </div>
         <div class="TopNavigation">
-            <div id="MainNav">
-                <a href="#/intro" target="_top" class="headerLogo">
-                    <img src="https://www.allstate.com/resources/Allstate/images/financial/global/allstate-logo-header-170x45.png" alt="all state insurance company logo"/>
-                </a>
-                <div class="quoteHead">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">GET A QUOTE</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="template/pages/getQuote/auto.html">Auto</a></li>
-                            <li><a href="#health">Health</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#others">Others</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <ul id="MainMenu" class="nav nav-pills">
-                    <li role="presentation"><a href="#autoInsurance" ng-click="">Insurance &amp; More</a></li>
-                    <li role="presentation"><a href="#">Claims</a></li>
-                    <li role="presentation"><a href="#payment">Tools &amp; Resources</a></li>
-                    <li role="presentation"><a href="#signUp">My Account</a> </li>
 
-                </ul>
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <a href="#／intro" target="_top" class="headerLogo">
+                            <img src="https://www.allstate.com/resources/Allstate/images/financial/global/allstate-logo-header-170x45.png" alt="all state insurance company logo">
+                        </a>
+                        <div class="quoteHead">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">GET A QUOTE</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="template/pages/getQuote/auto.html">Auto</a></li>
+                                    <li><a href="#health">Health</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#others">Others</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button id="collBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#my-navbar-collapse-1" aria-expanded="false" >
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!--this part is shown after the screen width is wider than the @media min-width value-->
+
+                    <div class="navbar-collapse collapse" id="my-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+
+                        <form class="navbar-form navbar-left" role="search">
+                            <!--<div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>-->
+                            <ul id="MainMenu" class="nav nav-pills">
+                                <li role="presentation"><a href="#autoInsurance" ng-click="">Insurance&amp;More</a></li>
+                                <li role="presentation"><a href="#">Claims</a></li>
+                                <li role="presentation"><a href="#payment">Tools&amp;Resources</a></li>
+                                <li role="presentation"><a href="#signUp">Account</a> </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <!-- how to move thr div's whole part by using sumlime hotkey
+                    // 1. put the cursor at the at of the line, and push option button and drag the mouse to the end of the div part
+                    // 2. cmd + left arrow : will lead the mouse to the head of each line. Then move the entire part to the right a little bit
+                    // another more quick way: put the cursor at the head line of the div, press ctrl+d, then using tab/shift+tab to move right or left
+                    -->
+                </nav>
             </div>
-        </div>
     </div>
 
     <div ng-view></div>
 </div>
+
 </body>
 </html>

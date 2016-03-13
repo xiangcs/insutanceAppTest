@@ -1,0 +1,33 @@
+.navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-form {
+    border-color: #e7e7e7;
+    height: inherit;
+    padding: 8px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    margin: auto;
+}
+.navbar-header .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 11px;
+}
+.navbar-header .navbar-toggle:hover {
+    background-color: #ddd;
+}
+
+.headerLogo {
+    position: relative;
+    float: left;
+    margin: 10px 0px 11px 43px;
+}
+#special {
+    top:800px;
+    border:2px solid red;
+    width: auto;
+    height: auto;
+}
+#collBtn {
+    z-index: 200;
+}
