@@ -6,6 +6,7 @@
 - account loggin
 - layout design
 - find an agent
+- second shot 
 
 ![alt tag](images/website-layout.png)
 
