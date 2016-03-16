@@ -6,6 +6,9 @@
 - account loggin
 - layout design
 - find an agent
+- second shot 
+
+
 ![alt tag](images/website-layout.png)
 
 In this app I  used HTML, CSS, JavaScript and Angular JS
