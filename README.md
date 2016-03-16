@@ -7,6 +7,7 @@
 - layout design
 - find an agent
 - second shot 
+- Jack (first )
 
 
 ![alt tag](images/website-layout.png)
