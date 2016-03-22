@@ -6,8 +6,7 @@
 - account loggin
 - layout design
 - find an agent
-- second shot 
-
+- fixed up nav menu
 
 ![alt tag](images/website-layout.png)
 
