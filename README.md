@@ -6,7 +6,7 @@
 - account loggin
 - layout design
 - find an agent
--fixed up nav menu
+- fixed up nav menu
 
 ![alt tag](images/website-layout.png)
 
