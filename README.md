@@ -6,9 +6,7 @@
 - account loggin
 - layout design
 - find an agent
-- second shot 
-- Jack (first )
-
+-fixed up nav menu
 
 ![alt tag](images/website-layout.png)
 
